@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* header */
 .nav-ul-items {
   width: 751px;
   display: flex;
@@ -22,21 +22,31 @@
   align-items: center;
 }
 
-.inline img {
+/* .inline img {
   margin-right: 14px;
-}
+} */
 
 .logo {
-  width: 164px;
-}
-
-/* .navigation {
   background-color: red;
-} */
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .heading img {
   /* max-width: 100%; */
   width: 100%;
+}
+
+/* section  1*/
+.section-padding {
+  padding: 152px 204px 84px 216px;
+}
+
+.box {
+  width: 292px;
+  border: 0.5px solid black;
 }
 
 .boxes {
@@ -45,19 +55,11 @@
   align-items: center;
 }
 
-.box {
-  width: 292px;
-  border: 0.5px solid black;
-}
-
-.section-padding {
-  padding: 152px 204px 84px 216px;
-}
-
-/* section */
+/* section 2 */
 
 .section-2-content {
-  width: 1214px;
+  max-width: 1214px;
+  width: 100%;
   /* height: 76px; */
   display: flex;
   /* padding: 0 auto; */
@@ -141,7 +143,7 @@ h2 {
   padding-top: 44px;
   padding-bottom: 76px;
 }
-/* section footer */
+/* footer  section*/
 
 .section-wrapper {
   padding: 85px 112px;
@@ -151,8 +153,8 @@ h2 {
 }
 
 .address {
-
-  width: 589px;
+  max-width: 589px;
+  width: 100%;
   margin-bottom: 38px;
 }
 
@@ -242,18 +244,27 @@ h2 {
 
 /* exprerience section  */
 
-#parent{
-  width: 1000px;
+#parent {
+  width: 50%;
   height: 723px;
   /* background-color: black; */
   z-index: 100;
   position: relative;
   /* border: 3px solid #73AD21; */
+  /* margin-right: 200px; */
 }
 
-#child1{
-  
- 
+.sect-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 0  auto;  */
+}
+
+.left-wr {
+  background-color: yellow;
+}
+#child1 {
   width: 280px;
   height: 155px;
   padding: 30px;
@@ -262,56 +273,49 @@ h2 {
   top: 122px;
   left: 512px;
   z-index: 1;
-
- 
- 
 }
 
-
-#child2{
+#child2 {
   width: 361px;
   height: 155px;
   padding: 30px;
   position: absolute;
   top: 221px;
   left: 212px;
-  
-background-color: #fff;
+
+  background-color: #fff;
 }
 
-#child3{
+#child3 {
   width: 276px;
-  height:155px ;
+  height: 155px;
   padding: 30px;
   position: absolute;
   top: 364px;
   left: 458px;
   background-color: #fff;
   z-index: 1;
-
 }
 
-#child4{
+#child4 {
   width: 361px;
-  height: 155px ;
+  height: 155px;
   padding: 30px;
   position: relative;
   left: 261px;
   top: 469px;
   background-color: #fff;
-
 }
 
-.children{
-  
+.children {
   border-radius: 4px;
-border: 1px solid var(--neutral-white, #FFF);
-background: #FFF;
-box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.10);
+  border: 1px solid var(--neutral-white, #fff);
+  background: #fff;
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
 }
 
-
-.children h5{
+.children h5 {
   display: flex;
   width: 115px;
   height: 65px;
@@ -325,10 +329,9 @@ box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17,
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-
 }
 
-.children p{
+.children p {
   color: #667299;
   font-family: Work Sans;
   font-size: 24px;
@@ -339,33 +342,77 @@ box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17,
   width: 238px;
 }
 
-.illus1{
+.illus1 {
   position: absolute;
   top: 103px;
   left: 723px;
   z-index: 2;
-
 }
 
-.illus2{
+.illus2 {
   position: absolute;
   top: 172px;
   left: 179px;
   z-index: 2;
 }
 
-.illus3{
+.illus3 {
   position: absolute;
   top: 349px;
   left: 662px;
   z-index: 2;
-  
 }
 
-.illus4{
+.illus4 {
   position: absolute;
   top: 589px;
   left: 542px;
   z-index: 2;
-  
+}
+/* .section-title-heading {
+  position: absolute;
+  left: 944px;
+  top: 172px;
+} */
+.right-wr h5 {
+  width: 359px;
+
+  color: var(--primary, #2947a9);
+  font-family: Work Sans;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.right-wr {
+  width: 300px;
+  color: var(--neutral-600, #525b7a);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-button {
+  width: 176px;
+  background-color: #2947a9;
+  color: #ffffff;
+  top: 509px;
+  left: 944px;
+  text-align: center;
+  padding: 16px 39px;
+  border-radius: 2px;
+  margin-top: 67px;
+}
+
+.bottom-section {
+  color: white;
+  background-color: #2947a9;
+  padding: 25px 0 26px 112px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  padding-left: 112px;
+  font-size: 16px;
 }

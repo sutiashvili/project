@@ -1,0 +1,86 @@
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+  /* navigation */
+  .nav-ul-items {
+    display: none;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: yellow;
+  }
+
+  .nav-ul-items {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+
+  .nav-ul-items {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* .section-padding {
+        padding: 0 auto;
+      } */
+
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-color: green;
+  }
+
+  .section-padding {
+    padding: 0 auto;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body {
+    background-color: white;
+  }
+}
